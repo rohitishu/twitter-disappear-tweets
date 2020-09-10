@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+<h1> All the tweets </h1>
+<% landing.forEach(function(reports){ %>
+    <div> 
+               
+                    <strong> <%=reports.name %> </strong>
+                    <span><%=reports.created %></span>
+                    <p>
+                        <%=reports.description %>
+                       </p>
+              
+                
+                    <a href="/landing/<%=reports._id%>/edit">Edit</a>
+                    <form  action="/landing/<%=reports._id%>?_method=DELETE" method="POST">
+                      <button  class="btn btn-danger "> Delete </button>
+                    </form>
+              
+                
+              </div>
+        
+              <% })  %>
+<%- include('partials/footer'); -%>
