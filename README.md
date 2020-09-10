@@ -22,7 +22,7 @@ mongod
 Then in another terminal:
 Clone this repository
 
-git clone https://github.com/rohitishu/covid19_tracker.git
+git clone https://github.com/rohitishu/twitter-disappear-tweets
 Go into the repository
 
 cd twitter
